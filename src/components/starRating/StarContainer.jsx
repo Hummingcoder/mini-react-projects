@@ -17,8 +17,8 @@ const StarContainer = () => {
   };
 
   return (
-    <section className="h-screen w-full flex items-center justify-center ">
-      <div className="w-[330px] h-[80px] flex items-center justify-center bg-yellow-500 p-3 rounded-lg m-2 shadow-md">
+    <section className="h-screen w-full flex items-center justify-center bg-[#4a3f63] ">
+      <div className="max-w-[330px] w-fit h-[80px] flex items-center justify-center bg-yellow-500 p-3 rounded-lg m-2 shadow-md">
         {Array(starLength)
           .fill()
           .map((i, index) => (

@@ -2,9 +2,9 @@ import React from "react";
 
 const Item = (props) => {
   return (
-    <article className="w-[250px] h-fit border border-black m-3 p-4 break-inside">
+    <article className="w-[250px] h-[360px] rounded-xl  border bg-slate-200 border-black m-3 p-4 break-inside">
       <img
-        className="w-full max-h-[240px] object-contain object-center mb-3 border border-black"
+        className="w-full h-fit max-h-[140px] rounded-xl bg-slate-300 object-contain object-center mb-3 border border-black"
         src={props.images[0]}
         alt={props.title}
       />

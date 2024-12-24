@@ -27,15 +27,17 @@ const Accordian = () => {
   const [currentShowing, setCurrentShowing] = useState(1);
 
   return (
-    <section className="max-w-[400px] w-full mx-auto my-12">
-      {data.map((item) => (
-        <Item
-          key={item.id}
-          {...item}
-          setCurrentShowing={setCurrentShowing}
-          currentShowing={currentShowing}
-        />
-      ))}
+    <section className="w-full h-screen bg-violet-600 flex items-center justify-center">
+      <div className="max-w-[400px] w-full mx-auto">
+        {data.map((item) => (
+          <Item
+            key={item.id}
+            {...item}
+            setCurrentShowing={setCurrentShowing}
+            currentShowing={currentShowing}
+          />
+        ))}
+      </div>
     </section>
   );
 };

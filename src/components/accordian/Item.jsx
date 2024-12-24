@@ -2,9 +2,9 @@ import React, { useState } from "react";
 
 const Item = (props) => {
   return (
-    <div className="border bg-gray-200 m-2">
+    <div className="border border-slate-300 rounded-lg bg-gray-100 m-2 px-3 py-2">
       <button
-        className="cursor-pointer font-bold"
+        className="cursor-pointer w-full text-left font-bold"
         onClick={() => props.setCurrentShowing(props.id)}
       >
         {props.ques}

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 
-const url = "https://picsum.photos/v2/list?page=1&limit=6";
+const url = "https://picsum.photos/v2/list?page=8&limit=6";
 
 const ImageSlider = () => {
   const [err, setErr] = useState("");
@@ -43,13 +43,19 @@ const ImageSlider = () => {
   }, []);
   if (loading === true) return <p>loading</p>;
   return (
-    <section className="w-full h-screen flex items-center justify-center">
-      <div className="relative w-full max-w-[500px] flex flex-col items-center justify-center">
-        <img
-          src={`${currentImg.download_url}`}
-          alt=""
-          className="w-[400px] h-[320px] rounded-lg m-4 shadow-lg"
-        />
+    <section className="w-full h-screen flex items-center justify-center bg-slate-500">
+      <div className="relative w-full max-w-[800px] flex flex-col items-center justify-center p-4">
+        {images.map((i, index) => (
+          <img
+            src={`${i.download_url}`}
+            alt={i.url}
+            key={index}
+            onClick={() => handleDots(i)}
+            className={` w-full md:h-[400px] h-[300px] object-cover object-center rounded-lg m-4 shadow-lg ${
+              currentImg.id === i.id ? "inline-block" : "hidden"
+            } `}
+          />
+        ))}
         <button
           onClick={handleNext}
           className="absolute shadow-lg right-8 top-[50%] translate-y-[-50%] p-4 bg-red-50 flex items-center justify-center rounded-full"
@@ -62,7 +68,7 @@ const ImageSlider = () => {
         >
           <FaArrowLeft />
         </button>
-        <div className="absolute bottom-7 flex items-center justify-center gap-1">
+        <div className="absolute bottom-12 flex items-center justify-center gap-1">
           {images.map((i, index) => (
             <button
               key={index}

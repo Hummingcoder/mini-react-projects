@@ -9,9 +9,9 @@ const Star = (props) => {
       onClick={() => props.handleClick(props.index)}
     >
       {props.star >= props.index + 1 || props.rating - 1 >= props.index ? (
-        <FaStar size={50} />
+        <FaStar className="w-[30px] h-[30px] sm:w-[50px] sm:h-[50px]" />
       ) : (
-        <FaRegStar size={50} />
+        <FaRegStar className="w-[30px] h-[30px] sm:w-[50px] sm:h-[50px]" />
       )}
     </div>
   );

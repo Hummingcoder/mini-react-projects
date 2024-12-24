@@ -46,18 +46,18 @@ const LoadMore = () => {
     return <p>{error}</p>;
   }
   return (
-    <section className="min-h-screen w-full p-4">
-      <div className="masonry-3-col mx-auto max-w-[1100px] w-full">
+    <section className="min-h-screen w-full p-4 bg-slate-600">
+      <div className=" flex items-center justify-center flex-wrap gap-3 mx-auto max-w-[1100px] w-full ">
         {data.map((item) => (
           <Item key={item.id} {...item} />
         ))}
       </div>
       <div className="w-full h-fit min-h-[200px] flex items-center justify-center">
         {loading ? (
-          <p className=" text-lg">loading...</p>
+          <p className="text-yellow-300 text-lg">loading...</p>
         ) : (
           <button
-            className=" rounded-lg bg-blue-400 text-white px-5 py-3"
+            className=" rounded-lg bg-blue-100 shadow-xl font-bold text-slate-700 px-5 py-3"
             onClick={handleLoadMore}
           >
             load more

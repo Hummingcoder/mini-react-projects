@@ -4,15 +4,17 @@ import ColorGen from "./components/colorGenerator/ColorGen";
 import StarContainer from "./components/starRating/StarContainer";
 import ImageSlider from "./components/imageSlider/ImageSlider";
 import LoadMore from "./components/loadMore/LoadMore";
+import TreeContainer from "./treeLike/TreeContainer";
 
 const App = () => {
   return (
     <main>
-      {/* <Accordian />
+      <Accordian />
       <ColorGen />
       <StarContainer />
-      <ImageSlider /> */}
+      <ImageSlider />
       <LoadMore />
+      <TreeContainer />
     </main>
   );
 };

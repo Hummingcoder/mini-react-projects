@@ -32,7 +32,6 @@ const LoadMore = () => {
 
   useEffect(() => {
     loadData();
-    console.log(data);
   }, [count]);
 
   function handleLoadMore() {

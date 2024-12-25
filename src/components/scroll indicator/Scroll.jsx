@@ -9,7 +9,6 @@ const Scroll = () => {
     const top = document.documentElement.scrollTop;
     const getPercentage = (top / (pageH - screenH)) * 100;
     setscrolled(getPercentage);
-    console.log(getPercentage);
   };
 
   useEffect(() => {

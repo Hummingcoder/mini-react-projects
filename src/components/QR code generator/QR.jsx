@@ -42,7 +42,7 @@ const QR = () => {
         </form>
 
         <QRCode
-          className="mx-auto m-6 w-full max-w-[400px] rounded-md p-2 "
+          className="mx-auto m-6 w-full max-w-[360px] rounded-md p-2 "
           id="qr-code-value"
           value={qrCode}
           size={400}

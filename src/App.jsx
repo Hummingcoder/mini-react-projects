@@ -4,7 +4,8 @@ import ColorGen from "./components/colorGenerator/ColorGen";
 import StarContainer from "./components/starRating/StarContainer";
 import ImageSlider from "./components/imageSlider/ImageSlider";
 import LoadMore from "./components/loadMore/LoadMore";
-import TreeContainer from "./treeLike/TreeContainer";
+import TreeContainer from "./components/treeLike/TreeContainer";
+import QR from "./components/QR code generator/QR";
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
       <ImageSlider />
       <LoadMore />
       <TreeContainer />
+      <QR />
     </main>
   );
 };

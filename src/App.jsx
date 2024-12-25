@@ -9,11 +9,13 @@ import QR from "./components/QR code generator/QR";
 import Scroll from "./components/scroll indicator/Scroll";
 import Tab from "./components/tab section/Tab";
 import ModalContainer from "./components/modal/ModalContainer";
+import ProfileContainer from "./components/github profile/ProfileContainer";
 
 const App = () => {
   return (
     <main>
-      <Scroll />
+      <ProfileContainer />
+      {/* <Scroll />
       <ImageSlider />
       <QR />
       <Tab />
@@ -22,7 +24,7 @@ const App = () => {
       <StarContainer />
       <ModalContainer />
       <Accordian />
-      <TreeContainer />
+      <TreeContainer /> */}
     </main>
   );
 };

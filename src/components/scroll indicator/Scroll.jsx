@@ -20,7 +20,7 @@ const Scroll = () => {
   }, []);
 
   return (
-    <div className="fixed w-full  z-50 p-6">
+    <div className="fixed top-0 w-full  z-50 p-6">
       <div className=" shadow-md w-full h-[12px] p-1 bg-white flex items-center justify-center rounded-full">
         <div
           className={`bg-emerald-300 h-full rounded-full`}

@@ -7,18 +7,20 @@ import LoadMore from "./components/loadMore/LoadMore";
 import TreeContainer from "./components/treeLike/TreeContainer";
 import QR from "./components/QR code generator/QR";
 import Scroll from "./components/scroll indicator/Scroll";
+import Tab from "./components/tab section/Tab";
 
 const App = () => {
   return (
     <main>
       <Scroll />
-      <Accordian />
+      <ImageSlider />
+      <QR />
+      <Tab />
+      <LoadMore />
       <ColorGen />
       <StarContainer />
-      <ImageSlider />
-      <LoadMore />
+      <Accordian />
       <TreeContainer />
-      <QR />
     </main>
   );
 };

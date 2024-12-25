@@ -8,6 +8,7 @@ import TreeContainer from "./components/treeLike/TreeContainer";
 import QR from "./components/QR code generator/QR";
 import Scroll from "./components/scroll indicator/Scroll";
 import Tab from "./components/tab section/Tab";
+import ModalContainer from "./components/modal/ModalContainer";
 
 const App = () => {
   return (
@@ -19,6 +20,7 @@ const App = () => {
       <LoadMore />
       <ColorGen />
       <StarContainer />
+      <ModalContainer />
       <Accordian />
       <TreeContainer />
     </main>

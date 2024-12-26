@@ -17,7 +17,6 @@ const ProfileContainer = () => {
       } else {
         setError("");
         setProfile(data);
-        console.log(data);
       }
       setLoading(false);
     } catch (error) {

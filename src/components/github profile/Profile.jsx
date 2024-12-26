@@ -2,7 +2,6 @@ import React from "react";
 import { FaExternalLinkAlt } from "react-icons/fa";
 
 const Profile = ({ avatar_url, html_url, name, login }) => {
-  console.log(html_url);
   return (
     <article className="w-fit rounded-md shadow-md bg-slate-50 max-w-[360px] p-4 border-2 border-blue-500 flex flex-col items-center justify-between gap-3">
       <img

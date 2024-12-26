@@ -17,9 +17,9 @@ const App = () => {
   return (
     <main>
       <Scroll />
-      <TicTacToe />
       <ProfileContainer />
       <ImageSlider />
+      <TicTacToe />
       <QR />
       <Tab />
       <LoadMore />

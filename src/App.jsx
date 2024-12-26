@@ -15,18 +15,18 @@ import SearchComp from "./components/search complete/SearchComp";
 const App = () => {
   return (
     <main>
-      <SearchComp />
-      {/* <Scroll />
-       <ProfileContainer /> 
+      <Scroll />
+      <ProfileContainer />
       <ImageSlider />
       <QR />
       <Tab />
       <LoadMore />
       <ColorGen />
       <StarContainer />
+      <SearchComp />
       <ModalContainer />
       <Accordian />
-      <TreeContainer /> */}
+      <TreeContainer />
     </main>
   );
 };

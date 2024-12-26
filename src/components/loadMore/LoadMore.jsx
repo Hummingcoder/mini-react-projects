@@ -10,7 +10,7 @@ const LoadMore = () => {
   async function loadData() {
     try {
       const res = await fetch(
-        `https://dummyjson.com/products?limit=20&skip=${count * 20}`
+        `https://dummyjson.com/products?limit=10&skip=${count * 10}`
       );
       const result = await res.json();
 

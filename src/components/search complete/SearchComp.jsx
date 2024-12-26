@@ -13,12 +13,6 @@ const SearchComp = () => {
         const userData = [];
         data.users.forEach((user) => {
           const fullName = (user.firstName + user.lastName).toLowerCase();
-
-          console.log(
-            fullName.slice(0, input.length) ===
-              input.replace(/\s+/g, "").toLowerCase()
-          );
-
           if (
             fullName.slice(0, input.length) ===
             input.replace(/\s+/g, "").toLowerCase()
@@ -38,9 +32,10 @@ const SearchComp = () => {
   }, [input]);
 
   return (
-    <section className="w-full h-screen pt-12">
+    <section className="w-full min-h-[50vh] pt-12 flex items-start justify-center bg-emerald-200">
       <div>
         <input
+          className="border border-black rounded-md px-4 py-2"
           onChange={(e) => setInput(e.target.value)}
           value={input}
           type="text"
@@ -53,6 +48,7 @@ const SearchComp = () => {
               {item}
             </button>
           ))}
+        {error && error.length > 0 && <p>{error}</p>}
       </div>
     </section>
   );

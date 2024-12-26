@@ -32,6 +32,9 @@ const ProfileContainer = () => {
   }
   return (
     <section className=" bg-pink-500 p-4 flex items-center justify-center flex-col w-full h-screen gap-5 ">
+      <h1 className="font-semibold text-2xl text-white mb-4">
+        Search Github Profile
+      </h1>
       <form
         className="w-full max-w-[400px] bg-white flex items-center justify-between border-2 border-blue-500 rounded-full p-1"
         onSubmit={handleInput}

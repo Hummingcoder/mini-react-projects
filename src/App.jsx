@@ -18,9 +18,9 @@ const App = () => {
     <main>
       <Scroll />
       <ProfileContainer />
-      <TicTacToe />
       <ImageSlider />
       <QR />
+      <TicTacToe />
       <Tab />
       <LoadMore />
       <ColorGen />

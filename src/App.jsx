@@ -11,11 +11,13 @@ import Tab from "./components/tab section/Tab";
 import ModalContainer from "./components/modal/ModalContainer";
 import ProfileContainer from "./components/github profile/ProfileContainer";
 import SearchComp from "./components/search complete/SearchComp";
+import TicTacToe from "./components/tic tac toe/TicTacToe";
 
 const App = () => {
   return (
     <main>
       <Scroll />
+      <TicTacToe />
       <ProfileContainer />
       <ImageSlider />
       <QR />

@@ -18,8 +18,8 @@ const App = () => {
     <main>
       <Scroll />
       <ProfileContainer />
-      <ImageSlider />
       <TicTacToe />
+      <ImageSlider />
       <QR />
       <Tab />
       <LoadMore />

@@ -10,12 +10,14 @@ import Scroll from "./components/scroll indicator/Scroll";
 import Tab from "./components/tab section/Tab";
 import ModalContainer from "./components/modal/ModalContainer";
 import ProfileContainer from "./components/github profile/ProfileContainer";
+import SearchComp from "./components/search complete/SearchComp";
 
 const App = () => {
   return (
     <main>
-      <ProfileContainer />
+      <SearchComp />
       {/* <Scroll />
+       <ProfileContainer /> 
       <ImageSlider />
       <QR />
       <Tab />

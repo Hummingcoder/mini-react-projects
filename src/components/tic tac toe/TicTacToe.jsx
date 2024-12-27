@@ -45,16 +45,18 @@ const TicTacToe = () => {
   }
 
   useEffect(() => {
-    if (playerMoves.length && moves.length) {
+    handleWins(playerMoves, "player");
+    if (playerMoves.length && moves.length && !winner.length) {
       const randNum = Math.floor(Math.random() * moves.length);
       setComputerMoves((prev) => [...prev, moves[randNum]]);
       setMoves((prev) => prev.filter((item) => item !== moves[randNum]));
-      handleWins(playerMoves, "player");
     }
   }, [playerMoves]);
 
   useEffect(() => {
-    handleWins(computerMoves, "computer");
+    if (!winner || !winner.length) {
+      handleWins(computerMoves, "computer");
+    }
   }, [computerMoves]);
 
   return (

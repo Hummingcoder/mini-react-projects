@@ -14,12 +14,12 @@ import SearchComp from "./components/search complete/SearchComp";
 import TicTacToe from "./components/tic tac toe/TicTacToe";
 import Index from "./components/feature flag/Index";
 import FeatureFlagProvider from "./components/feature flag/context/Contex";
+import Test from "./components/useFetch/Test";
 
 const App = () => {
   return (
     <main>
-      <Scroll />
-
+      {/* <Scroll />
       <ProfileContainer />
       <ImageSlider />
       <QR />
@@ -34,7 +34,8 @@ const App = () => {
       <TreeContainer />
       <FeatureFlagProvider>
         <Index />
-      </FeatureFlagProvider>
+      </FeatureFlagProvider> */}
+      <Test />
     </main>
   );
 };

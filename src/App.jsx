@@ -16,6 +16,7 @@ import Index from "./components/feature flag/Index";
 import FeatureFlagProvider from "./components/feature flag/context/Contex";
 import Test from "./components/useFetch/Test";
 import ClickOut from "./components/useClickOutside/ClickOut";
+import Resize from "./components/useResize/Resize";
 
 const App = () => {
   return (
@@ -38,6 +39,7 @@ const App = () => {
       </FeatureFlagProvider>
       <Test />
       <ClickOut />
+      <Resize />
     </main>
   );
 };

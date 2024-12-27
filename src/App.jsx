@@ -15,6 +15,7 @@ import TicTacToe from "./components/tic tac toe/TicTacToe";
 import Index from "./components/feature flag/Index";
 import FeatureFlagProvider from "./components/feature flag/context/Contex";
 import Test from "./components/useFetch/Test";
+import ClickOut from "./components/useClickOutside/ClickOut";
 
 const App = () => {
   return (
@@ -36,6 +37,7 @@ const App = () => {
         <Index />
       </FeatureFlagProvider>
       <Test />
+      <ClickOut />
     </main>
   );
 };

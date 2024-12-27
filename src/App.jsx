@@ -12,11 +12,16 @@ import ModalContainer from "./components/modal/ModalContainer";
 import ProfileContainer from "./components/github profile/ProfileContainer";
 import SearchComp from "./components/search complete/SearchComp";
 import TicTacToe from "./components/tic tac toe/TicTacToe";
+import Index from "./components/feature flag/Index";
+import FeatureFlagProvider from "./components/feature flag/context/Contex";
 
 const App = () => {
   return (
     <main>
       <Scroll />
+      <FeatureFlagProvider>
+        <Index />
+      </FeatureFlagProvider>
       <ProfileContainer />
       <ImageSlider />
       <QR />

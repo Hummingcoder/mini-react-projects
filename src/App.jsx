@@ -19,9 +19,7 @@ const App = () => {
   return (
     <main>
       <Scroll />
-      <FeatureFlagProvider>
-        <Index />
-      </FeatureFlagProvider>
+
       <ProfileContainer />
       <ImageSlider />
       <QR />
@@ -34,6 +32,9 @@ const App = () => {
       <ModalContainer />
       <Accordian />
       <TreeContainer />
+      <FeatureFlagProvider>
+        <Index />
+      </FeatureFlagProvider>
     </main>
   );
 };

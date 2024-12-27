@@ -19,7 +19,7 @@ import Test from "./components/useFetch/Test";
 const App = () => {
   return (
     <main>
-      {/* <Scroll />
+      <Scroll />
       <ProfileContainer />
       <ImageSlider />
       <QR />
@@ -34,7 +34,7 @@ const App = () => {
       <TreeContainer />
       <FeatureFlagProvider>
         <Index />
-      </FeatureFlagProvider> */}
+      </FeatureFlagProvider>
       <Test />
     </main>
   );

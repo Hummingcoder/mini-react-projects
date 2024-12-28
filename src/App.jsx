@@ -17,11 +17,13 @@ import FeatureFlagProvider from "./components/feature flag/context/Contex";
 import Test from "./components/useFetch/Test";
 import ClickOut from "./components/useClickOutside/ClickOut";
 import Resize from "./components/useResize/Resize";
+import ScrollTB from "./components/scroll to top or bottom/ScrollTB";
 
 const App = () => {
   return (
     <main>
       <Scroll />
+      <ScrollTB />
       <ProfileContainer />
       <ImageSlider />
       <QR />

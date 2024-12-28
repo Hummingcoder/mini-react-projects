@@ -9,7 +9,7 @@ const ModalContainer = () => {
   };
 
   return (
-    <section className="w-full h-screen flex items-center bg-yellow-300 justify-center">
+    <section className="w-full h-screen flex items-center bg-yellow-800 justify-center">
       <div>
         <button
           onClick={handleShowModal}

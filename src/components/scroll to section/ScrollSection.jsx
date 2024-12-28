@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
 
 const ScrollSection = () => {
-  const ref = useRef([]);
+  const compref = useRef([]);
   const compData = [
     {
       title: "first section",
@@ -18,12 +18,9 @@ const ScrollSection = () => {
   ];
 
   function scrollTo(i) {
-    const pos = ref.current[i].getBoundingClientRect().top;
-
-    window.scrollTo({
-      top: pos,
-      left: 0,
+    const pos = compref.current[i].scrollIntoView({
       behavior: "smooth",
+      block: "start",
     });
   }
 
@@ -43,7 +40,7 @@ const ScrollSection = () => {
       {compData.map((comp, i) => (
         <div
           key={comp.title}
-          ref={(e) => (ref.current[i] = e)}
+          ref={(e) => (compref.current[i] = e)}
           className={`min-h-screen w-full rounded-lg flex items-center justify-center ${comp.color} `}
         >
           <p className="text-xl font-semibold">{comp.title}</p>

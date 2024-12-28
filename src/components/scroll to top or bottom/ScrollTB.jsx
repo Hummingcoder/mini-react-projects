@@ -23,8 +23,9 @@ const ScrollTB = () => {
     function triggerOnScroll() {
       const screenH = window.innerHeight;
       const currScroll = window.scrollY;
+      console.log(showTop);
 
-      if (currScroll > screenH * 3) {
+      if (currScroll > screenH) {
         setShowTop(true);
       } else {
         setShowTop(false);
@@ -33,7 +34,7 @@ const ScrollTB = () => {
 
     window.addEventListener("scroll", triggerOnScroll);
 
-    return window.removeEventListener("scroll", triggerOnScroll);
+    return () => window.removeEventListener("scroll", triggerOnScroll);
   }, []);
 
   return (

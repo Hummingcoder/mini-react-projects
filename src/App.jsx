@@ -18,6 +18,7 @@ import Test from "./components/useFetch/Test";
 import ClickOut from "./components/useClickOutside/ClickOut";
 import Resize from "./components/useResize/Resize";
 import ScrollTB from "./components/scroll to top or bottom/ScrollTB";
+import ScrollSection from "./components/scroll to section/ScrollSection";
 
 const App = () => {
   return (
@@ -42,6 +43,7 @@ const App = () => {
       <Test />
       <ClickOut />
       <Resize />
+      <ScrollSection />
     </main>
   );
 };
